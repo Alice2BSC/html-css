@@ -1,26 +1,40 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Roboto", sans-serif;
+    --fonte3: "Roboto Condensed", sans-serif;
+}
 * {
     margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-
+    padding: 0px;   
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color:  white; /* cor da letra do tutulo*/
     text-align: center;
+    padding-bottom: 15px;
 }
 
 header > h1 {
-    padding-top: 50px;
+    padding-top: 33px;
+    padding-bottom: 10px;
     font-variant: small-caps; 
+    font-family: var(--fonte2);
+    font-size: 6vw; /* para adaptar a qualquer tela*/
 }
 
 header > p {
@@ -40,7 +54,9 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em; /*espachamento das letras*/
-    padding-left: 30px; /*espachamento das letras da margem*/
+    padding-left: 10px; /*espachamento das letras da margem*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /*para adaptar a qualquer tela*/
 }
 section.normal {
     background-color: white;
@@ -53,9 +69,11 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.418);
 }
+
 footer {
     background-color: black;
     color: white;
